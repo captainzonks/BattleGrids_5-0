@@ -11,5 +11,4 @@
 #include "Core/BattleGridsData.h"
 #include "Gameplay/Components/BattleGridsAbilityComponent.h"
 #include "Gameplay/Abilities/BattleGridsGameplayAbility.h"
-
-
+#include "Gameplay/Interfaces/BattleGridsTileInterface.h"
