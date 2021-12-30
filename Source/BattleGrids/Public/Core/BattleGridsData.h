@@ -18,13 +18,13 @@ struct FBattleGridsTileInfo
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int X;
+	int X{};
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int Y;
+	int Y{};
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int Z;
+	int Z{};
 
 	FBattleGridsTileInfo() = default;
 
