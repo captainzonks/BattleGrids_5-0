@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// © 2021, Matthew Barham. All rights reserved.
 
 #include "BattleGrids.h"
 #include "Modules/ModuleManager.h"

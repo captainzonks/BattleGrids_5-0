@@ -8,14 +8,20 @@ public class BattleGrids : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
+		// Core
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
-
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
+		
+		// Paper2D
+		PublicDependencyModuleNames.AddRange(new string[] { "Paper2D" });
 
-		// Uncomment if you are using Slate UI
+		// Gameplay Ability System
+		PublicDependencyModuleNames.AddRange(new string[] {"GameplayAbilities", "GameplayTags", "GameplayTasks"});
+
+		// Slate UI
 		PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
 		
-		// Uncomment if you are using online features
+		// Online
 		PrivateDependencyModuleNames.Add("OnlineSubsystem");
 
 		// To include OnlineSubsystemSteam, add it to the plugins section in your uproject file with the Enabled attribute set to true
