@@ -13,7 +13,7 @@ enum class EBattleGridsAbilityInputID : uint8
 };
 
 USTRUCT(BlueprintType)
-struct FBattleGridsTileInfo
+struct BATTLEGRIDS_API FBattleGridsTileInfo
 {
 	GENERATED_BODY()
 
@@ -33,3 +33,13 @@ struct FBattleGridsTileInfo
 	{
 	}
 };
+
+UENUM(BlueprintType)
+enum class EBuildMode : uint8
+{
+	Straight,
+	Box
+};
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnBuildModeChanged, EBuildMode, BuildMode);
+DECLARE_MULTICAST_DELEGATE_OneParam(FOnBuildModeChangedNative, EBuildMode);
